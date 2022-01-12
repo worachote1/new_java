@@ -5,5 +5,5 @@ public class Sort_Bubble {
 		// TODO Auto-generated method stub
 		System.out.println("Tisama");
 	}
-
+ 
 }
