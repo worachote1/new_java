@@ -29,6 +29,6 @@ public class Sort_Bubble {
 		 int arr[] = {6, 4, 5, 69,12, 2, 11, 9}; 
 		 bubble_sort(arr, arr.length);
 		 display(arr);  
-	}  
+	}   
  
 }
