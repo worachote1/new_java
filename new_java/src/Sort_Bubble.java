@@ -28,7 +28,7 @@ public class Sort_Bubble {
 		// TODO Auto-generated method stub
 		 int arr[] = {6, 4, 5, 69,12, 2, 11, 9}; 
 		 bubble_sort(arr, arr.length);
-		 display(arr); 
+		 display(arr);  
 	}  
  
 }
