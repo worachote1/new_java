@@ -19,14 +19,14 @@ public class Sort_Selection {
 			int min_index = i;
 			for(int j=i+1;j<a.length;j++)
 			{
-				if(a[min_index]>a[j])
+				if(a[j]<a[min_index])
 				{
-					min_index=j;
+					min_index = j;
 				}
 			}
 			int t = a[i];
 			a[i] = a[min_index];
-			a[min_index] = t; 
+			a[min_index]=t;
 		}
 	}
 
@@ -36,5 +36,6 @@ public class Sort_Selection {
 		selection_sort(arr);
 		display(arr);
 	}
-
+	
+	
 }
