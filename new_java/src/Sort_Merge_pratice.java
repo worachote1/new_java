@@ -6,7 +6,7 @@ public class  Sort_Merge_pratice {
 	public static void display(int a[]) {
 		for (int i = 0; i < a.length; i++) {
 			if (i == 0)
-				System.out.print("{");
+				System.out.print("{"); 
 			if (i != a.length - 1)
 				System.out.print(a[i] + ", ");
 			if (i == a.length - 1)
