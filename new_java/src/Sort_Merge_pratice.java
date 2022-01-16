@@ -17,7 +17,7 @@ public class  Sort_Merge_pratice {
 	public static void merge(int arr[],int left,int mid,int right)
 	{
 		//Merge 
-		//for comparison , sorting and merging
+		//for comparison , sorting and merging 
 		
 		//temp arrays
 		int temp[] = new int[arr.length];
