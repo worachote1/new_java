@@ -21,7 +21,7 @@ public class Sort_Bubble {
 				a[i+1] = a[i];
 				a[i] = t;
 			}
-		}
+		} 
 		bubble_sort(a, length-1);;
 	}
 	public static void main(String[] args) {
