@@ -25,7 +25,7 @@ public class  Sort_Merge_pratice {
 			{
 				int mid = (left+right)/2;
 				merge_sort(arr, left, mid);
-				merge_sort(arr, mid+1, right); 
+				merge_sort(arr, mid+1, right);  
 			
 				//Merge 
 				//for comparison , sorting and merging	
