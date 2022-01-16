@@ -3,5 +3,10 @@
 
 My personal access token :  -->   
 
+<<<<<<< HEAD
  
 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  
+=======
+
+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
+>>>>>>> refs/remotes/origin/master
