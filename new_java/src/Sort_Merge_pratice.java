@@ -33,7 +33,7 @@ public class  Sort_Merge_pratice {
 				//temp arrays
 				int temp[] = new int[arr.length];  		
 				//index of temp arrays
-				int temp_index = left;
+				int temp_index = left; 
 				//left-sub arrays starter index
 				int left_index = left;
 				//right-sub arrays starter index
