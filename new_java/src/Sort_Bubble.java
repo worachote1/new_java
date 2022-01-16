@@ -26,7 +26,7 @@ public class Sort_Bubble {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 int arr[] = {6, 4, 5, 69,12, 2, 11, 9}; 
+		 int arr[] = {6, 4, 5, 79,12, 2, 11, 9}; 
 		 bubble_sort(arr, arr.length);
 		 display(arr);    
 	}    
