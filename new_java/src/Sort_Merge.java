@@ -12,7 +12,7 @@ public class Sort_Merge {
 			if(i == a.length-1) System.out.print(a[i]+"}");
 		}
 	}
-	
+	 
 	public static void merge(int arr[], int left, int mid, int right){
 
 	    int len1 = mid - left +1;
