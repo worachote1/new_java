@@ -18,7 +18,7 @@ public class Sort_Bubble {
 			if(a[i]>a[i+1])
 			{
 				int t = a[i+1];
-				a[i+1] = a[i];
+				a[i+1] = a[i]; 
 				a[i] = t;
 			}
 		} 
