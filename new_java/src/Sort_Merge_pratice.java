@@ -13,76 +13,81 @@ public class  Sort_Merge_pratice {
 				System.out.println(a[i] + "}");
 		} 
 	}	
-
-	public static void merge(int arr[],int left,int mid,int right)
-	{
-		//Merge 
-		//for comparison , sorting and merging 
-		
-		//temp arrays
-		int temp[] = new int[arr.length];
-		//index of temp arrays
-		int k=left;
-		
-		//left-sub arrays starter index
-		int left_index = left; 
-		//right-sub arrays starter index
-		int right_index = mid+1; 
-		
-		while(left_index <= mid && right_index <= right)
-		{
-			if(arr[left_index]<arr[right_index])
-			{
-				temp[k] = arr[left_index];
-				k++;
-				left_index++; 
-			}
-			else if(arr[right_index]<arr[left_index])
-			{
-				temp[k] = arr[right_index];
-				k++;
-				right_index++;
-			}
-		}
-		
-		//merge the remaining sub-left arrays
-		while(left_index <= mid)
-		{
-			temp[k] = arr[left_index];
-			k++;
-			left_index++;
-		}
-		//merge the remain sub-right arrays
-		while(right_index <= right)
-		{
-			temp[k] = arr[right_index];
-			k++;
-			right_index++;
-		}
-		
-		//clone temp arrays into arr
-		for(int m=left;m<=right;m++)
-		{
-			arr[m]=temp[m];
-		}
-	}		
 	
 	public static void merge_sort(int arr[],int left, int right)
 	{
-		int mid = (left+right)/2;
+		if(left==right) return;
 		
-		if (left==right) return;
 		
-		else if(left<right) 
-		{	
-			merge_sort(arr, left, mid);
-			merge_sort(arr, mid+1, right);
+		else
+		{
+			if(left<right)
+			{
+				int mid = (left+right)/2;
+				merge_sort(arr, left, mid);
+				merge_sort(arr, mid+1, right);
 			
-			merge(arr, left, mid, right);
+				//Merge 
+				//for comparison , sorting and merging	
+				
+				//temp arrays
+				int temp[] = new int[arr.length];  		
+				//index of temp arrays
+				int temp_index = left;
+				//left-sub arrays starter index
+				int left_index = left;
+				//right-sub arrays starter index
+				int right_index = mid+1;
+				
+				//merge the left and right subarrays
+				while(left_index<=mid && right_index<=right)
+				{
+					if(arr[left_index]<arr[right_index])
+					{
+						temp[temp_index++]=arr[left_index++];
+						//temp_index++;
+						//left_index++;
+					}
+					else if(arr[right_index]<arr[left_index])
+					{
+						temp[temp_index++]=arr[right_index++];
+					//	temp_index++;
+					//	right_index++;
+					}
+				}
+				
+				//merge for remaining either sub-left or sub-right
+				while(left_index<=mid)
+				{
+					
+						temp[temp_index++]=arr[left_index++];
+			//			temp_index++;
+			//			left_index++;
+				}
+				while(right_index<=right)
+				{
+					
+						temp[temp_index++]=arr[right_index++];
+			//			temp_index++;
+			//			right_index++;
+										
+				}
+			
+				//Finally , clone temp into arr
+				for(int i=left;i<=right;i++)
+				{
+					arr[i]=temp[i];
+				}
+				//test display arr at each time
+				System.out.println("prn temp ");
+				display(temp);				
+				System.out.println("prn arr ");
+				display(arr);
+			}
 		}
-		
-		
+	
 	}
+		
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -91,8 +96,8 @@ public class  Sort_Merge_pratice {
 		display(arr);
 		
 		//After using Merge sort
-		merge_sort(arr, 0, arr.length-1);
 		
+		merge_sort(arr, 0, arr.length-1);
 		System.out.println("After use Merge sort : ");
 		display(arr);
 			
