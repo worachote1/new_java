@@ -16,7 +16,7 @@ public class Lab02_Pro4_64010757 {
 		s[1] = sc.nextLine();		
 		System.out.println("Enter the third city: ");
 		s[2] = sc.nextLine();	
-		String temp; 
+		String temp;  
 		for(int i=0;i<s.length;i++)
 		{
 			for(int j=1;j<3;j++)
