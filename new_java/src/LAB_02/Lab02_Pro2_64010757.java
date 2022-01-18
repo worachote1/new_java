@@ -51,7 +51,7 @@ public class Lab02_Pro2_64010757 {
 			}
 			else
 			{
-				if(c=='w') 
+				if(c=='w')  
 				{
 					say(bot, a); System.out.print(" You won");
 				}
