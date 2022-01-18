@@ -16,8 +16,8 @@ public class Pro4_64010757 {
 		double weight = sc.nextDouble();
 		System.out.print("Enter height in inches: ");
 		double height = sc.nextDouble();
-		System.out.println("BMI is "+bmi(weight, height));
-		
+		System.out.print("BMI is ");
+		System.out.format("%.4f",bmi(weight, height));
 	}
 
 }

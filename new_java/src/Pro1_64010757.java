@@ -18,7 +18,7 @@ public class Pro1_64010757 {
 	//	System.out.println("(birth+imm)-death = "+(birth+imm-death));
 		
 		double cal = (birth+imm-death);
-		double result = pop+cal;
+		int result = (int)(pop+cal);
 		System.out.println(result);
 	}
 
