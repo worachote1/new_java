@@ -4,9 +4,18 @@ import java.util.Random;
 import java.util.Scanner;
 public class Lab02_Pro2_64010757 {
 
-	public static void say(int bot,int player)
+	public static void say(int player,int bot,int userResult)
 	{
-		System.out.print("The computer is "+bot+". You are "+player+".");		
+		String c[]= {"scissor","rock","paper"};
+
+		String r[] = {". You lost"," too. It is a draw",". You won"};
+	//test
+		System.out.println("[player] = "+player);
+		System.out.println("bot = "+bot);
+		System.out.println("[userResult] = "+userResult);
+	
+		
+		System.out.print("The computer is "+c[bot]+". You are "+c[player]+r[userResult]);
 	}
 	public static void main(String[] args) {
 			Random rd = new Random();
@@ -15,51 +24,19 @@ public class Lab02_Pro2_64010757 {
 			int a = sc.nextInt();
 			int bot = rd.nextInt(3);
 			//System.out.println(bot);
-			char c='x';
-			if(a==0)
-			{
-				if(bot==a)
-				{
-					c='d'; 
-				}
-				else c = (bot==2) ? 'w' : 'l';
-			}
-			else if(a==1)
-			{
-				if(bot==a)
-				{
-					c='d'; 
-					return;
-				}
-				else c = (bot==0) ? 'w' : 'l';
-			}
-			else if(a==2)
-			{
-				if(bot==a)
-				{
-					c='d'; 
-					return;
-				}
-				else c = (bot==1) ? 'w' : 'l';				
-			}
 			
-			//result
-			if(c=='d')
-			{
-				say(bot,a);
-				System.out.print(" It is a draw");
-			}
-			else
-			{
-				if(c=='w')  
-				{
-					say(bot, a); System.out.print(" You won");
-				}
-				if(c=='l') 
-				{
-					say(bot,a); System.out.print(" You lose");
-				}
-			}
+			//0 -> lost , 1->draw , 2->win
+			 int result[][] = {
+				 	 {1,0,2},
+					 {2,1,0},
+					 {0,2,1}
+			 };
+			 
+			 
+			 int userResult = result[a][bot];
+			 say(a, bot, userResult);
+	
+			 
 	}
 
 }
