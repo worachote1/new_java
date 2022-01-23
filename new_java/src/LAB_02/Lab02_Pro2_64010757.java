@@ -10,10 +10,10 @@ public class Lab02_Pro2_64010757 {
 
 		String r[] = {". You lost"," too. It is a draw",". You won"};
 	//test
-		System.out.println("[player] = "+player);
+	/*	System.out.println("[player] = "+player);
 		System.out.println("bot = "+bot);
 		System.out.println("[userResult] = "+userResult);
-	
+	*/
 		
 		System.out.print("The computer is "+c[bot]+". You are "+c[player]+r[userResult]);
 	}
