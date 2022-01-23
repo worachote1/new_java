@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab03_Pro3_64010757 {
-	
+
 	public static void display(int m[][])
 	{
 		for(int i=0;i<m.length;i++)
@@ -193,6 +193,16 @@ public class Lab03_Pro3_64010757 {
 		}
 	}	
 	
+	//Display All the result depend on problems
+	public static void displayAll(int m[][])
+	{
+		checkAllRow(m);
+		checkAllCol(m);
+		checkSuperDiagonal(m);
+		checkDiagonal(m);
+		checkSubDiagonal(m);
+	}	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -209,11 +219,7 @@ public class Lab03_Pro3_64010757 {
 		}
 		
 		display(m);
-		checkAllRow(m);
-		checkAllCol(m);
-		checkSuperDiagonal(m);
-		checkDiagonal(m);
-		checkSubDiagonal(m);
+		displayAll(m);
 	}
 
 }
