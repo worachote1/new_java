@@ -154,15 +154,15 @@ public class Lab03_Pro3_64010757 {
 				if(j==i+1) sum += m[i][j];
 			}
 		}
-		if(sum==0) 
+		if(sum==0 && m.length!=1) 
 			{
 				System.out.println("All 0s on the superdiagonal");
 			}
-		if(sum==m.length) 
+		if(sum==m.length-1 && m.length!=1) 
 		{
 			System.out.println("All 1s on the superdiagonal");
 		}
-		else if(sum != 0 && sum != m.length)
+		else if(sum != 0 && sum != m.length || m.length==1)
 		{
 			System.out.println("No same numbers on the superdiagonal");
 		}
@@ -179,15 +179,15 @@ public class Lab03_Pro3_64010757 {
 				if(j==i-1 && i!=0) sum += m[i][j];
 			}
 		}
-		if(sum==0) 
+		if(sum==0 && m.length!=1) 
 		{ 
 			System.out.println("All 0s on the subdiagonal");
 		}
-		if(sum==m.length) 
+		if(sum==m.length-1 && m.length!=1) 
 		{
 			System.out.println("All 1s on the subdiagonal");
 		}
-		else if(sum != 0 && sum != m.length)
+		else if(sum != 0 && sum != m.length || m.length==1)
 		{
 			System.out.println("No same numbers on the subdiagonal");
 		}
