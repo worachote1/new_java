@@ -8,7 +8,7 @@ public class Lab03_Pro3_64010757 {
 	public static void display(int m[][])
 	{
 		for(int i=0;i<m.length;i++)
-		{
+		{ 
 			for(int j=0;j<m[0].length;j++)
 			{
 				System.out.print(m[i][j]);
