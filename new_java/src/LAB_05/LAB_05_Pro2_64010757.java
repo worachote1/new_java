@@ -11,7 +11,6 @@ public class LAB_05_Pro2_64010757 {
 			displayPerimeterAndArea(r, num);
 		}
 		return;
-		
 	}
 	public static void main(String[] args) {
 		RegularPolygon r[] = new RegularPolygon[3];
@@ -20,10 +19,7 @@ public class LAB_05_Pro2_64010757 {
 		 r[2] = new RegularPolygon(10,4,5.6,7.8);
 	
 		 displayPerimeterAndArea(r, r.length);
-		 
-//		displayPerimeterAndArea(r1);
-//		displayPerimeterAndArea(r2);
-//		displayPerimeterAndArea(r3);
+
 	}
 
 }
