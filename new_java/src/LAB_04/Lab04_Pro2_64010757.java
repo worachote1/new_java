@@ -14,6 +14,7 @@ public class Lab04_Pro2_64010757 {
         System.out.println("------------\nAfter specified the elapsed time of one day after current day");
         final long MILLIS_OF_ONE_DAY = 86400000; 
         final long ELAPSED_TIME_AFTER_CURRENT_DAY = g.getTimeInMillis() + MILLIS_OF_ONE_DAY;
+        
         g.setTimeInMillis(ELAPSED_TIME_AFTER_CURRENT_DAY);
         
         System.out.println("Year is " + g.get(GregorianCalendar.YEAR));
