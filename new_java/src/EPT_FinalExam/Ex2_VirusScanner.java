@@ -34,13 +34,13 @@ public class Ex2_VirusScanner {
 				0x9C , 0xAD , 0xFA , 0x6C ,
 				0xAD
 			};
-			//BUT I FOUND AT 0x73 ?
+			//
 			System.out.println("VIRUS_ARR : ");
 			for(int m=0;m<VIRUS_ARR.length;m++)
 			{
 				System.out.print(VIRUS_ARR[m]+" ");
 			}
-			//check if new_temp have virus sequence
+			//check if this file have virus sequence
 			final int VIRUS_LENGTH = fileContent.length - SIZE_OF_SEQUENCE;
 			int countToCheck = 0;
 			System.out.println("\nHFT : ");
