@@ -1,0 +1,130 @@
+zw,kanyonga camp,Kanyonga Camp,00,,-17.1333333,29.2
+zw,kapane,Kapane,06,,-19.2666667,27.5166667
+zw,kapateni,Kapateni,07,,-21.6333333,32.1
+zw,kapoka,Kapoka,00,,-17.1,28.4
+zw,kariba,Kariba,00,34797,-16.5166667,28.8
+zw,kariyangwe,Kariyangwe,00,,-17.9666667,27.5
+zw,karoi,Karoi,04,24981,-16.8166667,29.6833333
+zw,karoyi,Karoyi,04,,-16.8166667,29.6833333
+zw,kashambi,Kashambi,07,,-20.0327778,29.8847222
+zw,katoma,Katoma,04,,-18.35,29.9166667
+zw,kawahove,Kawahove,04,,-17.4166667,30.1666667
+zw,kayisa,Kayisa,06,,-19.85,27.65
+zw,kazangarare,Kazangarare,03,,-16.5,29.9333333
+zw,kelvin east,Kelvin East,06,,-20.1625,28.5388889
+zw,kelvin north,Kelvin North,06,,-20.1547222,28.5252778
+zw,kelvin west,Kelvin West,06,,-20.1641667,28.525
+zw,kenilworth estates,Kenilworth Estates,06,,-19.4333333,28.95
+zw,kenilworth,Kenilworth,06,,-20.1194444,28.5894444
+zw,kensington,Kensington,04,,-17.8061111,31.0297222
+zw,kenyandavu camp,Kenyandavu Camp,00,,-18.3,27.9833333
+zw,kenyandavu,Kenyandavu,00,,-18.3,27.9833333
+zw,kenyungu,Kenyungu,00,,-17.1333333,29.2
+zw,keynshamburg,Keynshamburg,06,,-19.2833333,29.6166667
+zw,kezi,Kezi,06,,-20.9166667,28.4666667
+zw,kilallo,Kilallo,06,,-20.0833333,28.5905556
+zw,killarney,Killarney,06,,-20.1338889,28.6505556
+zw,kimberley reefs,Kimberley Reefs,03,,-17.2963889,31.3297222
+zw,king mine,King Mine,07,,-20.0833333,30.5333333
+zw,kingsdale,Kingsdale,06,,-20.1008333,28.6102778
+zw,kingsmead,Kingsmead,04,,-17.7569444,31.1025
+zw,kings mine,Kings Mine,07,,-20.0833333,30.5333333
+zw,kopje,Kopje,04,,-17.8366667,31.0402778
+zw,korodziba,Korodziba,06,,-19.3833333,26.9166667
+zw,kubiko,Kubiko,07,,-19.7166667,31.8333333
+zw,kudjwara,Kudjwara,04,,-16.7,31.9666667
+zw,kumalo,Kumalo,06,,-20.15,28.6166667
+zw,kumalo north,Kumalo North,06,,-20.1433333,28.6161111
+zw,kutsaga village,Kutsaga Village,04,,-17.9188889,31.1455556
+zw,kuwadzana 3,Kuwadzana 3,04,,-17.8119444,30.9311111
+zw,kuwadzana 4,Kuwadzana 4,04,,-17.8255556,30.8852778
+zw,kuwadzana,Kuwadzana,04,,-17.8252778,30.9263889
+zw,kwekwe,Kwekwe,04,116332,-18.9166667,29.8166667
+zw,lakeside,Lakeside,06,,-20.1988889,28.62
+zw,lalapansi,Lalapansi,04,,-19.3333333,30.1833333
+zw,lalapanzi,Lalapanzi,04,,-19.3333333,30.1833333
+zw,lancaster,Lancaster,06,,-20.2166667,29.3
+zw,legion,Legion,07,,-21.4166667,28.5333333
+zw,legion mine,Legion Mine,07,,-21.4166667,28.5333333
+zw,letombo park,Letombo Park,04,,-17.8355556,31.1202778
+zw,lewisam,Lewisam,04,,-17.7880556,31.1138889
+zw,lewisham,Lewisham,04,,-17.7880556,31.1138889
+zw,lichendale,Lichendale,04,,-17.8033333,31.1555556
+zw,limbeck,Limbeck,03,,-17.2833333,31.05
+zw,lincoln green,Lincoln Green,04,,-17.83,31.0075
+zw,lingombenetshankwe,Lingombenetshankwe,06,,-19.55,27.1666667
+zw,lions den,Lions Den,04,,-17.2666667,30.0333333
+zw,little norfolk,Little Norfolk,04,,-17.7716667,31.0375
+zw,lobengula,Lobengula,06,,-20.1361111,28.5172222
+zw,lobenvale,Lobenvale,06,,-20.1002778,28.5963889
+zw,lochinvar,Lochinvar,04,,-17.8694444,30.9877778
+zw,lockview,Lockview,06,,-20.1872222,28.6677778
+zw,logan park,Logan Park,04,,-17.8841667,31.0761111
+zw,lonely mine,Lonely Mine,06,,-19.5,28.75
+zw,lorelei,Lorelei,04,,-17.8488889,31.1288889
+zw,lower gwelo,Lower Gwelo,06,,-19.2333333,29.25
+zw,lower nondwene,Lower Nondwene,06,,-20.0355556,28.7044444
+zw,lower rangemore,Lower Rangemore,06,,-20.1752778,28.4652778
+zw,lubesi,Lubesi,06,,-19.6333333,27.1833333
+zw,lucu,Lucu,06,,-19.5,27.7333333
+zw,luhonja,Luhonja,06,,-19.5166667,27.75
+zw,luhotswa,Luhotswa,06,,-19.5166667,27.75
+zw,luipaards vlei,Luipaards Vlei,07,,-20.3166667,32.65
+zw,luna,Luna,04,,-17.7011111,31.1747222
+zw,lundi,Lundi,07,,-20.8994444,30.7861111
+zw,lupando,Lupando,06,,-19.4833333,27.2333333
+zw,lupane,Lupane,06,,-18.9333333,27.7666667
+zw,lupani,Lupani,06,,-18.9333333,27.7666667
+zw,lupinde,Lupinde,06,,-19.75,27.7833333
+zw,lupindi,Lupindi,06,,-19.75,27.7833333
+zw,lupondo,Lupondo,06,,-19.4833333,27.2333333
+zw,lusulu,Lusulu,00,,-18.0666667,27.8333333
+zw,lusulu settlement,Lusulu Settlement,00,,-18.0666667,27.8333333
+zw,lutombe,Lutombe,07,,-22.0833333,30.15
+zw,lutsha,Lutsha,06,,-19.0333333,28.6
+zw,luveve,Luveve,06,,-20.1,28.5
+zw,luveve native village,Luveve Native Village,06,,-20.1,28.5
+zw,mabalanas,Mabalanas,06,,-19.85,27.4166667
+zw,mabaye,Mabaye,06,,-19.0833333,28.7166667
+zw,mabele,Mabele,06,,-19.6666667,27.4166667
+zw,mabelreign,Mabelreign,04,,-17.7905556,31.0013889
+zw,mabiriya,Mabiriya,06,,-19.6666667,27.25
+zw,mabutweni,Mabutweni,06,,-20.1425,28.5316667
+zw,mabuze,Mabuze,07,,-20.9277778,29.4416667
+zw,mabvuku,Mabvuku,04,,-17.8388889,31.1858333
+zw,machachuta,Machachuta,07,,-21.85,29.35
+zw,macheke,Macheke,04,,-18.15,31.85
+zw,machendu,Machendu,08,,-21.4666667,31.5833333
+zw,machihiri,Machihiri,00,,-17.3333333,28.9333333
+zw,machiroli,Machiroli,04,,-17.7666667,30.4
+zw,machrole,Machrole,04,,-17.7666667,30.4
+zw,maclear,Maclear,04,,-16.5166667,31.1833333
+zw,madadzi,Madadzi,04,,-16.9,29.75
+zw,mademauli,Mademauli,06,,-19.35,27.6333333
+zw,madhlosi,Madhlosi,06,,-19.4,27.6666667
+zw,madioma,Madioma,04,,-17.8166667,32.7666667
+zw,madona,Madona,06,,-19.75,27.7666667
+zw,madonga,Madonga,07,,-21.9166667,29.3666667
+zw,madubus,Madubus,06,,-19.85,27.3833333
+zw,madziwa,Madziwa,03,,-16.9166667,31.5333333
+zw,mafayfa,Mafayfa,06,,-19.4,28.4
+zw,mafusini,Mafusini,06,,-19.8833333,27.6166667
+zw,mafuto,Mafuto,03,,-16.7166667,32.7666667
+zw,magazi,Magazi,06,,-19.0166667,28.5333333
+zw,magodi masili,Magodi Masili,06,,-19.7666667,27.3166667
+zw,magunge,Magunge,00,,-16.85,29.4166667
+zw,magwegwe,Magwegwe,06,,-20.1369444,28.5058333
+zw,magwegwe north,Magwegwe North,06,,-20.1225,28.4955556
+zw,magwegwe west,Magwegwe West,06,,-20.1316667,28.4947222
+zw,mahanzwa,Mahanzwa,06,,-19.8,27.8333333
+zw,mahlalayedwa,Mahlalayedwa,06,,-19.35,27.0166667
+zw,mahlosi,Mahlosi,06,,-19.4,27.6666667
+zw,mahusekwa,Mahusekwa,04,,-18.3166667,31.2
+zw,ziga,Ziga,06,,-19.2166667,27.4833333
+zw,zikamanas village,Zikamanas Village,00,,-18.2166667,27.95
+zw,zimbabwe,Zimbabwe,07,,-20.2666667,30.9166667
+zw,zimre park,Zimre Park,04,,-17.8661111,31.2136111
+zw,ziyakamanas,Ziyakamanas,00,,-18.2166667,27.95
+zw,zizalisari,Zizalisari,04,,-17.7588889,31.0105556
+zw,zuzumba,Zuzumba,06,,-20.0333333,27.9333333
+zw,zvishavane,Zvishavane,07,79876,-20.3333333,30.0333333
