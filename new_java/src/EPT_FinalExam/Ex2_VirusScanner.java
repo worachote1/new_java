@@ -7,21 +7,26 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.nio.file.Files;
 public class Ex2_VirusScanner {
 
 	// "D:/test_virus.dll"
 	public static void main(String[] args) {
 		try {
-			FileInputStream fis = new FileInputStream(new File("D:/test_virus.dll"));
-			BufferedReader reader = new BufferedReader(
-					new InputStreamReader(fis,"UTF8")
-			);
+			//File file = new File("D:/test_virus.dll");
+			//-----Test using .readAllByte
+			byte[] fileContent = Files.readAllBytes(Paths.get("D:/test_virus.dll"));
+			System.out.println("fileContent : ");
+			System.out.println(Arrays.toString(fileContent));
+			//------------------
 			int ch;
 			int count = 0;
 			//test how to check sequence
 			final int SIZE_OF_SEQUENCE = 17; 
-		
+			
 			final int VIRUS_ARR[] = {
 				0x0A , 0x13 , 0x6F , 0x29 ,
 				0x35 , 0x18 , 0x70 , 0x00 ,
@@ -35,35 +40,8 @@ public class Ex2_VirusScanner {
 			{
 				System.out.print(VIRUS_ARR[m]+" ");
 			}
-			//store in temp
-			int temp[] = new int[1000];
-			int i = 0;
-			//read one byte at a time
-			System.out.println("\nread one byte at a time : ");
-			while((ch = reader.read()) != -1)
-			{
-				//System.out.print((char)ch+" ");
-				count++;
-				System.out.print(ch+" ");
-				temp[i++]=ch;
-			}
-			//System.out.println(0xA);
-			System.out.println();
-			System.out.println("All number in binary file : "+count);
-			
-			//creat new temp array which have length = count
-			int new_temp[] = new int[count];
-			for(int m=0;m<new_temp.length;m++)
-			{
-				new_temp[m]=temp[m];
-			}				
-			System.out.println("Display new_temp : ");
-			for(int m=0;m<new_temp.length;m++)
-			{
-				System.out.print(new_temp[m]+" ");
-			}
 			//check if new_temp have virus sequence
-			final int VIRUS_LENGTH = new_temp.length - SIZE_OF_SEQUENCE;
+			final int VIRUS_LENGTH = fileContent.length - SIZE_OF_SEQUENCE;
 			int countToCheck = 0;
 			System.out.println("\nHFT : ");
 			for(int m=0;m<VIRUS_LENGTH;m++)
@@ -71,10 +49,13 @@ public class Ex2_VirusScanner {
 				countToCheck = 0;
 				for(int n=0;n<SIZE_OF_SEQUENCE;n++)
 				{
-					if(new_temp[(m+n)] == VIRUS_ARR[n])
+					// if u want to assign a value higher than 127 to a byte it overflows, 
+					// so 128 as a byte in java is -128, 
+					// but after you AND (&) -128 against 255 you'll get +128.
+					if( ((byte)fileContent[(m+n)] & 255) == VIRUS_ARR[n])
 					{
 						countToCheck++;
-						System.out.println("Now found : "+new_temp[(m+n)]+" with count : "+countToCheck);
+						System.out.println("Now found : "+(fileContent[(m+n)]& 255)+" with count : "+countToCheck);
 					}
 					else
 					{
