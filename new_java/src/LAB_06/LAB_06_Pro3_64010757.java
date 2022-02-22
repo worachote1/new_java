@@ -16,5 +16,6 @@ public class LAB_06_Pro3_64010757 {
 		{
 			System.out.print(" "+q.dequeue());
 		}
+		//System.out.println(q.element.length);
 	}
 }
