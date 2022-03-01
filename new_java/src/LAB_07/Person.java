@@ -10,10 +10,7 @@ public class Person {
     public Person() {
 
     }
-    public void test_prn()
-    {
-    	
-    }
+
     @Override
     public String toString() {
         return "Person{name=" + this.name +

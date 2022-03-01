@@ -12,6 +12,8 @@ public class Student extends Person{
 	}
     @Override
     public String toString() {
-        return super.toString() + "Student{status="+this.studentStatus+"}";
+        return super.toString() + "Student{status="+status.valueOf(studentStatus)+"}"; //this.studentStatus
     }
+    
+    
 }
