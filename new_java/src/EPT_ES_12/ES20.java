@@ -1,23 +1,23 @@
 package EPT_ES_12;
 
 import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.util.Arrays;
 
-public class ES19 {
+public class ES20 {
 
-	public static void int2text(int num)
+	public static void double2text(double d,int p)
 	{
 		
 
 		String mask = "000000000000";
 		DecimalFormat df = new DecimalFormat(mask);
-		String test = df.format(num);
+		String test = df.format(d);
 		if(test.charAt(0) == '-')
 		{
 			System.out.print("ź");
 			test = test.substring(1);
 		}
-		
+
 		String billion = test.substring(0,3);
 		String hundred_million = test.substring(3,6);
 		String hundred_thousand = test.substring(6, 9);
@@ -148,11 +148,20 @@ public class ES19 {
 			result += unit[(int)hundred.charAt(2)%48];
 		}
 	
+		//manage dot decimal
+		String startDot[] = Double.toString(d).split("\\.");
+		System.out.println(Arrays.toString(startDot));
+		result += "�ش";
+		for(int i=0;i<=p-1;i++)
+		{
+			result += unit[(int)startDot[1].charAt(i)%48];
+		}
 		System.out.print(result);
 	}
 	public static void main(String[] args) {
 		
-		int2text(-1311480221);	
+		double2text(-25.374,2);	
 	
 	}
+
 }
