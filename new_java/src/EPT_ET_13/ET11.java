@@ -63,7 +63,7 @@ public class ET11 {
 		
 		String s = sc.nextLine();
 		for(int k=0;k<s.length();k++)
-		{
+		{ 
 			if(convertEngToTH.containsKey(s.charAt(k)))
 			{
 				System.out.print(convertEngToTH.get(s.charAt(k)));
