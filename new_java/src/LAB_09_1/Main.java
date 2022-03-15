@@ -21,13 +21,13 @@ import javax.swing.JTextArea;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
 import javax.swing.Action;
+import java.awt.event.ActionListener;
 
 public class Main extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField loan_textField;
 	private JTextField year_textField;
-	private final Action action = new SwingAction();
 
 	/**
 	 * Launch the application.
@@ -62,7 +62,7 @@ public class Main extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		loan_textField = new JTextField();
-		loan_textField.setText("1500000");
+		//loan_textField.setText("1500000");
 		loan_textField.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		loan_textField.setBounds(127, 55, 154, 31);
 		contentPane.add(loan_textField);
@@ -74,13 +74,14 @@ public class Main extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		year_textField = new JTextField();
-		year_textField.setText("5"); //test
+		//year_textField.setText("5"); //test
 		year_textField.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		year_textField.setBounds(438, 56, 43, 30);
 		contentPane.add(year_textField);
 		year_textField.setColumns(10);
 		
 		JButton btnNewButton = new JButton("Show Table");
+
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		btnNewButton.setBounds(491, 58, 139, 25);
 		contentPane.add(btnNewButton);
@@ -97,20 +98,26 @@ public class Main extends JFrame {
 		JTextArea textArea = new JTextArea();
 		scrollPane_1.setViewportView(textArea);
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 19));
-		String topRow = "Interest Rate    Monthly Payment    Total Payment\n";
 		
-		double loan_input = Double.parseDouble(loan_textField.getText());
-		int year_input = Integer.parseInt(year_textField.getText());
-		for(double i = 5; i <= 8; i += 0.25)
-		{
-//			String s = Integer.toString(i)+"\n";
-//			textArea.append(s);
-			 double monthlyPayment = payPerMonth(loan_input, year_input, i);
-			 String output = String.format("%.2f %20.2f %20.2f\n", i, monthlyPayment, monthlyPayment * 12 * year_input);
-			 topRow+=output;
-		}
-		textArea.setText(topRow);
-		
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				//When press button
+				String topRow = "Interest Rate    Monthly Payment    Total Payment\n";
+				
+				double loan_input = Double.parseDouble(loan_textField.getText());
+				int year_input = Integer.parseInt(year_textField.getText());
+				for(double i = 5; i <= 8; i += 0.25)
+				{
+//					String s = Integer.toString(i)+"\n";
+//					textArea.append(s);
+					 double monthlyPayment = payPerMonth(loan_input, year_input, i);
+					 String output = String.format("%.2f %20.2f %20.2f\n", i, monthlyPayment, monthlyPayment * 12 * year_input);
+					 topRow+=output;
+				}
+				textArea.setText(topRow);
+			}
+		});
 	}
 	
 	 public double payPerMonth(double loan, int years, double interestRate) {
@@ -118,12 +125,6 @@ public class Main extends JFrame {
 	        int n = years * 12;
 	        return (loan * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
 	    }
-	private class SwingAction extends AbstractAction {
-		public SwingAction() {
-			putValue(NAME, "SwingAction");
-			putValue(SHORT_DESCRIPTION, "Some short description");
-		}
-		public void actionPerformed(ActionEvent e) {
-		}
-	}
+
+	 
 }
