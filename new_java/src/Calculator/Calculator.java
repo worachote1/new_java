@@ -76,10 +76,9 @@ public class Calculator extends JFrame {
 		JButton ChangeSignButton = new JButton("+/-");
 		ChangeSignButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				n1 = Double.parseDouble(textField.getText());
-				n1 *= -1;
-				textField.setText(String.valueOf(n1));
-			}
+				//change singed of number
+				textField.setText(String.valueOf(Double.parseDouble(textField.getText()) * -1));
+		}
 		});
 		ChangeSignButton.setBackground(Color.ORANGE);
 		ChangeSignButton.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 18));
@@ -137,7 +136,7 @@ public class Calculator extends JFrame {
 		MulButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				n1=Double.parseDouble(textField.getText());
-				operation = "*";
+				operation = "*"; 
 				textField.setText(null);
 			}
 		});
