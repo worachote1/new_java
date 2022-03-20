@@ -63,7 +63,7 @@ public class Calculator extends JFrame {
 		JButton ClearButton = new JButton("CLEAR");
 		ClearButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				n1=0; n2=0;
+				
 				textField.setText(null);
 			}
 		});
@@ -248,7 +248,7 @@ public class Calculator extends JFrame {
 			}
 		});
 		btn_0.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 28));
-		btn_0.setBounds(43, 354, 181, 57);
+		btn_0.setBounds(139, 354, 85, 57);
 		contentPane.add(btn_0);
 		
 		JButton DotButton = new JButton(".");
@@ -291,5 +291,16 @@ public class Calculator extends JFrame {
 		ResultButton.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 28));
 		ResultButton.setBounds(351, 354, 85, 57);
 		contentPane.add(ResultButton);
+		
+		JButton DelButton = new JButton("<<");
+		DelButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				textField.setText(textField.getText().substring(0, textField.getText().length()-1));
+			}
+		});
+		DelButton.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 28));
+		DelButton.setBackground(Color.BLUE);
+		DelButton.setBounds(43, 354, 85, 57);
+		contentPane.add(DelButton);
 	}
 }
