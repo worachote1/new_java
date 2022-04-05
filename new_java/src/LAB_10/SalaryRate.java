@@ -9,4 +9,4 @@ public class SalaryRate {
 	public final static double ASSISTANT_MIN = 50000, ASSISTANT_MAX = 80000;
 	public final static double ASSOCIATE_MIN = 60000, ASSOCIATE_MAX = 110000;
 	public final static double FULL_MIN = 75000	  , FULL_MAX = 130000;
-}
+} 
