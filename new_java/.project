@@ -14,4 +14,26 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/LAB_09_2/canada.png</name>
+			<type>1</type>
+			<location>D:/รูป wallpaper/canada.png</location>
+		</link>
+		<link>
+			<name>src/LAB_09_2/england.png</name>
+			<type>1</type>
+			<location>D:/รูป wallpaper/england.png</location>
+		</link>
+		<link>
+			<name>src/LAB_09_2/usa.png</name>
+			<type>1</type>
+			<location>D:/รูป wallpaper/usa.png</location>
+		</link>
+		<link>
+			<name>src/LAB_09_2/vietnam.png</name>
+			<type>1</type>
+			<location>D:/รูป wallpaper/vietnam.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

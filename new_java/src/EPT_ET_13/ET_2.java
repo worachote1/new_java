@@ -25,6 +25,7 @@ public class ET_2 {
 		ss = s.split(" ");
 		//System.out.println(Arrays.toString(ss));
 		display(ss,ss.length);
+		System.out.println("SD");
 	}
 
 }
