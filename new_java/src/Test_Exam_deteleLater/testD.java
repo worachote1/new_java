@@ -23,13 +23,12 @@ public class testD extends Application {
 		gp.setAlignment(Pos.CENTER);
 		
 		Label email_label = new Label("Email : "); 
-		email_label.setPrefWidth(100);
 		
 		Label password_label = new Label("Password : "); 
 		password_label.setPrefWidth(100);
 		
-		TextField email_textfield = new TextField();
-		TextField password_textField = new PasswordField();
+		TextField email_textfield = new TextField(); email_textfield.setPrefWidth(350);
+		TextField password_textField = new PasswordField(); password_textField.setPrefWidth(350);
 		
 		Button submit_btn = new Button("Submit");
 		Button clear_btn = new Button("Clear");
@@ -43,6 +42,14 @@ public class testD extends Application {
 		
 		gp.add(submit_btn, 0, 2);
 		gp.add(clear_btn, 1, 2);
+		
+	      //Styling nodes  
+	      submit_btn.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white;"); 
+	      clear_btn.setStyle("-fx-background-color: darkslateblue; -fx-text-fill: white;"); 
+	       
+	      email_label.setStyle("-fx-font: normal bold 20px 'serif' "); 
+	      password_label.setStyle("-fx-font: normal bold 20px 'serif' ");  
+	      gp.setStyle("-fx-background-color: BEIGE;"); 
 		
 		stage.setTitle("Test GridPane");
 		stage.setScene(new Scene(gp,600,400));

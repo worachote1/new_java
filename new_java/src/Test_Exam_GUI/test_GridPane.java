@@ -33,6 +33,7 @@ public class test_GridPane extends Application {
 		  
 	      //Creating Text Filed for email        
 	      TextField textField1 = new TextField();       
+	      textField1.setPrefWidth(400);
 	      
 	      //Creating Text Filed for password        
 	      TextField textField2 = new TextField();  
