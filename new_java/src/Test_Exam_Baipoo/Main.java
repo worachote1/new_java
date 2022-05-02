@@ -1,7 +1,7 @@
 package Test_Exam_Baipoo;
 
 import java.io.File;
-import java.lang.*;
+//import java.lang.*;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
@@ -17,29 +17,29 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.util.Duration;
 
-
 public class Main extends Application {
-	
-	
+
 	@Override
 	public void start(Stage primaryStage) {
-		File file = new File("vdo.mp4");
+		File file = new File("Saudi_theme.mp4");
 		 Media media = new Media(file.toURI().toString());
 	        MediaPlayer mediaPlayer = new MediaPlayer(media);
 	        MediaView mediaView = new MediaView(mediaPlayer);
 
 	        Button playButton = new Button(">");
+	        playButton.setPrefWidth(50);
 	        playButton.setOnAction(e -> {
 	            if (playButton.getText().equals(">")) {
 	                mediaPlayer.play();
 	                playButton.setText("||");
 	            } else {
 	                mediaPlayer.pause();
-	                playButton.setText(">");
+	                playButton.setText(">"); 
 	            }
 	        });
 
 	        Button rewindButton = new Button("<<");
+	        rewindButton.setPrefWidth(50);
 	        rewindButton.setOnAction(e -> mediaPlayer.seek(Duration.ZERO));
 
 	        Slider slVolume = new Slider();
@@ -50,6 +50,7 @@ public class Main extends Application {
 	        mediaPlayer.volumeProperty().bind(slVolume.valueProperty().divide(100));
 
 	        HBox hBox = new HBox(10);
+	    
 	        hBox.setAlignment(Pos.CENTER);
 	        hBox.getChildren().addAll(playButton, rewindButton,
 	                new Label("Volume"), slVolume);
@@ -59,8 +60,8 @@ public class Main extends Application {
 	        pane.setBottom(hBox);
 
 	        // Create a scene and place it in the stage
-	        Scene scene = new Scene(pane, 1280, 750);
-	        primaryStage.setTitle("MediaDemo"); // Set the stage title
+	        Scene scene = new Scene(pane, 1100, 750);
+	        primaryStage.setTitle("Exam OOP javaFX"); // Set the stage title
 	        primaryStage.setScene(scene); // Place the scene in the stage
 	        primaryStage.show(); // Display the stage
 	}
