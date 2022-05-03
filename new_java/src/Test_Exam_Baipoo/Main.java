@@ -1,8 +1,11 @@
 package Test_Exam_Baipoo;
 
 import java.io.File;
+import java.util.Observable;
+
 //import java.lang.*;
 import javafx.application.Application;
+import javafx.beans.value.ObservableValue;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -15,6 +18,7 @@ import javafx.scene.layout.Region;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.scene.text.FontWeight;
 import javafx.util.Duration;
 
 public class Main extends Application {
@@ -34,26 +38,34 @@ public class Main extends Application {
 	                playButton.setText("||");
 	            } else {
 	                mediaPlayer.pause();
-	                playButton.setText(">"); 
+	                playButton.setText(">");
 	            }
 	        });
 
 	        Button rewindButton = new Button("<<");
 	        rewindButton.setPrefWidth(50);
-	        rewindButton.setOnAction(e -> mediaPlayer.seek(Duration.ZERO));
+	        rewindButton.setOnAction(e -> mediaPlayer.seek(Duration.ONE));
 
 	        Slider slVolume = new Slider();
 	        slVolume.setPrefWidth(150);
 	        slVolume.setMaxWidth(Region.USE_PREF_SIZE);
 	        slVolume.setMinWidth(30);
 	        slVolume.setValue(50);
+	        slVolume.setShowTickLabels(true);
 	        mediaPlayer.volumeProperty().bind(slVolume.valueProperty().divide(100));
+	        
+	        //test 
+	        Label label_showVolume = new Label();
+	        slVolume.valueProperty().addListener((ObservableValue,oldValue,newValue) -> {
+	        	
+	        	label_showVolume.setText(" "+String.valueOf(newValue.intValue())+" %");
+	        });
 
 	        HBox hBox = new HBox(10);
-	    
+	        
 	        hBox.setAlignment(Pos.CENTER);
 	        hBox.getChildren().addAll(playButton, rewindButton,
-	                new Label("Volume"), slVolume);
+	                new Label("Volume"), slVolume,label_showVolume);
 
 	        BorderPane pane = new BorderPane();
 	        pane.setCenter(mediaView);
